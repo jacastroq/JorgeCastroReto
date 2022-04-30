@@ -10,10 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Context\" />
-    <Folder Include="Contracts\" />
     <Folder Include="Dto\" />
-    <Folder Include="Repository\" />
   </ItemGroup>
 
 
