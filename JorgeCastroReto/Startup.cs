@@ -29,6 +29,9 @@ namespace JorgeCastroReto
         {
             services.AddSingleton<Context.DapperContext>();
             services.AddScoped<IEnterpriseRepository, EnterpriseRepository>();
+            services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+            services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+
             services.AddControllers();
         }
 

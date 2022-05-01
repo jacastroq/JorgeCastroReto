@@ -26,8 +26,8 @@ namespace JorgeCastroReto.Repository
             var query = "SELECT * FROM enterprises";
             using (var connection = _context.CreateConnection())
             {
-                var companies = await connection.QueryAsync<Enterprise>(query);
-                return companies.ToList();
+                var enterprises = await connection.QueryAsync<Enterprise>(query);
+                return enterprises.ToList();
             }
         }
 
@@ -38,8 +38,8 @@ namespace JorgeCastroReto.Repository
             var query = "SELECT * FROM enterprises WHERE id = @Id AND status = 1";
             using (var connection = _context.CreateConnection())
             {
-                var empresa = await connection.QuerySingleOrDefaultAsync<Enterprise>(query, new { id });
-                return empresa;
+                var enterprise = await connection.QuerySingleOrDefaultAsync<Enterprise>(query, new { id });
+                return enterprise;
             }
 
         }
